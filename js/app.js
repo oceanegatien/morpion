@@ -104,7 +104,7 @@ var p1 = true;
 		$(this).html('&#128502;');
 		p1 = false;
 		morpionTable.splice(cell, 1, 'X');
-		victoire();
+		victoireConditions();
 console.log(morpionTable);
 		
 		
@@ -113,11 +113,13 @@ console.log(morpionTable);
 		$(this).html('&#11093;');
 		p1 = true;
 		morpionTable.splice(cell, 1, 'O');
-		victoire();
+		victoireConditions();
 console.log(morpionTable);
 	});
 	
-function victoire() {
+
+
+function victoireConditions() {
 
 	if(morpionTable[0] == 'O' && morpionTable[1]=='O' && morpionTable[2] == 'O' || morpionTable[0]=='X' && morpionTable[1]=='X' && morpionTable[2] == 'X'){
 		if (p1 == true){
@@ -182,40 +184,13 @@ function victoire() {
 		}
 	}
 
-
-
-
-
-
-	
-
-	 
 }
 	
 
 
 
 
-
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
